@@ -1,19 +1,22 @@
 manifest:
-  defaults:
-    revision: v0.3
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: tomahawk-keyboards
+      url-base: https://github.com/Tomahawk-Keyboards
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: tomahawk-keyboards
+      revision: modify_backlight_layer
       import: app/west.yml
-    - name: tomahawk56-wireless-view-zmk-config
-      url: 
-        https://github.com/Tomahawk-Keyboards/tomahawk56-wireless-view-zmk-config
+    - name: zmk-rgbled-widget
+      remote: tomahawk-keyboards
       revision: main
-      path: modules/tomahawk56-wireless-view-zmk-config
+    - name: zmk-helpers
+      remote: urob
+      revision: 0b9e9d1dd9e86f70b4c8c2b0fab55c4f90c9d2e3
+      path: modules/helpers
   self:
     path: config

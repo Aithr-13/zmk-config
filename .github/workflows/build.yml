@@ -3,6 +3,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
-    with:
-      config_path: boards/tomahawk56-wireless-view-zmk-config-main/config
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
