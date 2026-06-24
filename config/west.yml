@@ -10,5 +10,10 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    - name: tomahawk56-wireless-view-zmk-config
+      url: 
+        https://github.com/Tomahawk-Keyboards/tomahawk56-wireless-view-zmk-config
+      revision: main
+      path: modules/tomahawk56-wireless-view-zmk-config
   self:
     path: config
