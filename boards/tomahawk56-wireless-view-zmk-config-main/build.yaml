@@ -19,17 +19,9 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: mikoto@7.3.0//zmk
     shield: tomahawk56_right
-    snippet: ""
-    cmake-args: ""
   - board: mikoto@7.3.0//zmk
     shield: settings_reset
-    snippet: ""
-    cmake-args: ""
   - board: nrfmicro/nrf52840/zmk@1.3
     shield: tomahawk56_left
-    snippet: ""
-    cmake-args: ""
   - board: nrfmicro/nrf52840/zmk@1.3
     shield: tomahawk56_right
-    snippet: ""
-    cmake-args: ""
